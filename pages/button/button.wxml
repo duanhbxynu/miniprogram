@@ -1,0 +1,35 @@
+<!--pages/button/button.wxml-->
+<!-- <text>pages/button/button.wxml</text> -->
+<!-- button的使用方法 -->
+<button>按钮</button>
+
+<!-- size属性：mini  行内块-->
+<button size="mini">按钮</button>
+<button size="mini">按钮</button>
+
+<!-- type属性 -->
+<button size="mini" type="primary">anniu</button>
+<button size="mini" type="default">anniu</button>
+<button size="mini" type="warn">anniu</button>
+
+<!-- plain属性：镂空效果 -->
+<button size="mini" plain="true">anniu</button>
+
+<!-- disable属性 -->
+<button size="mini" disabled="true">anniu</button>
+
+<!-- loading属性 -->
+<button size="mini" loading>anniu</button>
+
+<!-- hover-class属性 -->
+<button open-type="openSetting" hover-class="pressed">anniu</button>
+
+
+<!-- checkbox -->
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{items}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</checkbox-group>
+
+

@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/home/home",
-    "pages/about/about",
-    "pages/profile/profile"
+    "pages/view/view",
+    "pages/button/button",
+    "pages/text/text",
+    "pages/home/home"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5777",
@@ -20,9 +21,10 @@
         "text": "home",
         "iconPath": "assets/tabbar/home.png",
         "selectedIconPath": "assets/tabbar/home_active.png"
-      },{
-        "pagePath": "pages/profile/profile",
-        "text": "profile",
+      },
+      {
+        "pagePath": "pages/button/button",
+        "text": "button",
         "iconPath": "assets/tabbar/profile.png",
         "selectedIconPath": "assets/tabbar/profile_active.png"
       }

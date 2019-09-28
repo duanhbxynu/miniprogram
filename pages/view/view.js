@@ -1,8 +1,6 @@
-// pages/profile/profile.js
+// pages/view/view.js
 Page({
-  handleGetUserInfo(event){
-    console.log(event)
-  },
+
   /**
    * 页面的初始数据
    */

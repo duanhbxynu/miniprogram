@@ -1,0 +1,5 @@
+<!--pages/view/view.wxml-->
+<text>pages/view/view.wxml</text>
+
+<view hover-class="hover-view" hover-start-time="{{100}}" hover-stay-time="{{0}}">box1</view>
+
