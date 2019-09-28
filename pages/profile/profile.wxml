@@ -1,0 +1,13 @@
+<!--pages/profile/profile.wxml-->
+<text>pages/profile/profile.wxml</text>
+<view>我是profile页面</view>
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取用户信息</button>
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+
+<view>
+  <view>a</view>
+  <view>b</view>  
+  <view>c</view>
+  <view>d</view>
+</view>
