@@ -1,0 +1,6 @@
+/* pages/func/func.wxss */
+.box{
+  width: 300rpx;
+  height: 300rpx;
+  background: yellow;
+}
