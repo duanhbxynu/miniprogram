@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/func/func",
+    "pages/wxs/wxs",
     "pages/home/home",
     "pages/template/template",
     "pages/view/view",
@@ -7,9 +9,9 @@
     "pages/text/text"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarBackgroundColor": "#000000",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "我的小程序",
+    "navigationBarTitleText": "小程序",
     "backgroundColor": "#cccccc",
     "enablePullDownRefresh": false,
     "backgroundTextStyle": "dark"
