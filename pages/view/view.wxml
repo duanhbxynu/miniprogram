@@ -1,5 +1,54 @@
 <!--pages/view/view.wxml-->
-<text>pages/view/view.wxml</text>
+<view>--------------条件判断---------------</view>
 
-<view hover-class="hover-view" hover-start-time="{{100}}" hover-stay-time="{{0}}">box1</view>
+<!-- wx:if的使用 -->
+<button size="mini" bindtap="handleSwitchShow">点击显示隐藏</button>
+<view wx:if="{{isShow}}">哈哈哈</view>
 
+<!-- wx:elif的使用 -->
+<button size="mini" bindtap="hanldeIncrement">点击</button>
+<view wx:if="{{score >= 90}}">优秀</view>
+<view wx:elif="{{score >=80}}">良好</view>
+<view wx:elif="{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+
+<!-- hidden属性 -->
+<view hidden="{{true}}">我是hidden属性控制的内容</view>
+
+<!-- wx:if和hidden的区别 -->
+<!-- 
+  hidden:属性是将一个组件隐藏起来，该组件依然存在文档流中，只是display：none
+  wx:if 将组件隐藏起来，该组件根本不存在，原因是没有创建
+  如何选择使用这两中：
+  如果显示和隐藏切换的频率非常高，选择使用hidden
+  如果显示和隐藏不怎么切换使用，那么久选择使用wx:if
+
+ -->
+<view>---------------</view>
+<view hidden="{{true}}">我是通过hidden控制的内容</view>
+<view wx:if="{{false}}">我是通过wx:if控制的内容</view>
+
+<!-- 列表渲染 -->
+<view>--------列表渲染--------</view>
+<!-- 1.遍历数组，字符串和数字 -->
+<view wx:for="{{['abc','cba','nba']}}" wx:key="{{item}}">{{item}} {{index}}</view>
+<view wx:for="coderwhy" wx:key="{{item}}">{{item}} {{index}}</view>
+<view wx:for="{{5}}" wx:key="{{item}}">{{item}}</view>
+
+<block>
+  <!-- 此标签不使组件，不会在页面上渲染出来，只是一个包裹标签，不接受其他属性，只接受控制属性如：wx:for,wx:if等 ，能提升性能-->
+</block>
+
+<!-- 3.item、index起名字 -->
+<!-- 当有多重循环的时候，为了不使item和index重复，就使用了wx:for-xx="xxx"的方式起新名字 -->
+<!-- 给movies数组的item定义的新名字是movie，数组的index起的新名字是i -->
+<view wx:for="{{movies}}" wx:for-item="movie" wx:key="{{movie}}" wx:for-index="i">{{movie}} {{i}}</view>
+
+<block wx:for="{{nums}}" wx:for-item="inner_nums" wx:key="{{inner_nums}}">
+  <!-- <view>{{inner_nums}}</view> -->
+  <block wx:for="{{inner_nums}}" wx:key="{{item}}">
+    <view>{{item}}</view>
+  </block>
+</block>
+
+<!-- 4.key的作用 -->

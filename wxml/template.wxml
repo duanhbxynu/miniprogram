@@ -1,0 +1,8 @@
+<!-- 之前的时候，小程序是不支持自定义组件的，为了进行代码复用，就使用了template -->
+<!-- 模板中包裹的内容，在没有调用之前，是不会进行任何渲染的 -->
+
+<!-- 定义模板 -->
+<template name="contentItem">
+  <button size="mini" type="primary">{{btnText}}</button>
+  <view>{{content}}</view>
+</template>
