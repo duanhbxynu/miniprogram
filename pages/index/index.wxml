@@ -23,3 +23,17 @@
 <!-- 5.tab-control的练习 -->
 <w-tab-control titles="{{['衣服','鞋子','裤子','帽子']}}"
                bind:itemclick="handleTabClick"/>
+
+<!-- 6.直接选中组件修改数据/调用方法 -->
+<button size="mini" bind:tap="handleIncrementCpn">修改组件内的数据</button>
+<my-sel class="sel-class" id="sel-id"/>
+
+<!-- 7. slot插槽的使用-->
+<!-- 7.1 单个插槽的使用 -->
+<my-slot>
+  <button size="mini">我是插入的button</button>
+</my-slot>
+<my-slot>
+  <text>hahahha</text>
+</my-slot>
+<!-- 7.2多个插槽的使用 -->
