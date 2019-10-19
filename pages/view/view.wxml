@@ -4,7 +4,6 @@
 <!-- wx:if的使用 -->
 <button size="mini" bindtap="handleSwitchShow">点击显示隐藏</button>
 <view wx:if="{{isShow}}">哈哈哈</view>
-
 <!-- wx:elif的使用 -->
 <button size="mini" bindtap="hanldeIncrement">点击</button>
 <view wx:if="{{score >= 90}}">优秀</view>
@@ -52,3 +51,25 @@
 </block>
 
 <!-- 4.key的作用 -->
+
+<!-- 
+1.image组件可以写成单标签，也可以写成双标签 
+2.image组件有自己的大小：320*240，
+2.是一个行内块元素
+-->
+<!-- <image></image>
+<image/> -->
+
+<!-- src属性：本地地址和远程地址 -->
+<image src="../../assets/tabbar/profile_active.png" />
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/1.d0a16186.png" />
+
+<button bindtap="handleChooseAlbum">选择图片</button>
+<image src="{{imagePath}}"></image>
+
+<!-- bindload：监听图片加载完成 lazyload:图片懒加载-->
+<image wx:for="{{1}}" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" bindload="handleImageLoad" lazy-load="true"/>
+
+<!-- show-menu-by-longpress:长按图片出现小程序码 -->
+<image src="../../assets/tabbar/profile_active.png" show-menu-by-longpress/>
+

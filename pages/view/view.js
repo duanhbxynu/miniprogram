@@ -19,5 +19,24 @@ Page({
     this.setData({
       score:this.data.score + 1
     })
+  },   
+  // 打开相册或者相机
+  handleChooseAlbum(){
+    var that = this;
+    wx.chooseImage({
+      success:function(res){
+        console.log(res)
+        const path = res.tempFiles[0].path
+        that.setData({
+          imagePath:path
+        })
+      }
+    })
+  },
+  handleImageLoad(){
+    console.log("图片加载完成")
   }
-}) 
+  
+  
+})
+

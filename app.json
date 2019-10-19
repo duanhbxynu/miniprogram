@@ -1,13 +1,16 @@
 {
   "pages": [
-    "pages/func/func",
-    "pages/wxs/wxs",
+    "pages/index/index",
     "pages/home/home",
-    "pages/template/template",
+    "pages/scroll/scroll",
+    "pages/input/input",
     "pages/view/view",
     "pages/button/button",
     "pages/text/text"
   ],
+  "usingComponents":{
+    "my-cpn":"/components/my-cpn/my-cpn"
+  },
   "window": {
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTextStyle": "white",

@@ -1,0 +1,14 @@
+/* pages/index/index.wxss */
+.title{
+  color: red;
+  font-size: 70rpx;
+}
+.red{
+  color: red;
+}
+.green{
+  color: green;
+}
+.blue{
+  color: blue;
+}

@@ -11,7 +11,7 @@ App({
    * 当小程序启动，或从后台进入前台显示，会触发 onShow
    */
   onShow: function(options) {
-    console.log(options)
+    // console.log(options)
     switch (options.scene) {
       case 1001:
         break;
@@ -20,7 +20,7 @@ App({
     }
     wx.getUserInfo({
       success:function(res){
-        console.log(res)
+        // console.log(res)
       }
     })
   },
