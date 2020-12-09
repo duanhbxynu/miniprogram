@@ -27,7 +27,7 @@
 <button size="mini" bind:tap="handleIncrementCpn">修改组件内的数据</button>
 <my-sel class="sel-class" id="sel-id"/>
 
-<!-- 7. slot插槽的使用-->
+<!-- 7. slot插槽的使用 -->
 <!-- 7.1 单个插槽的使用 -->
 <my-slot>
   <button size="mini">我是插入的button</button>
