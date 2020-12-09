@@ -63,13 +63,7 @@
     },
     "miniprogram": {
       "list": [
-        {
-          "id": 0,
-          "name": "pages/template/template",
-          "pathName": "pages/template/template",
-          "query": "",
-          "scene": null
-        }
+        
       ]
     }
   }

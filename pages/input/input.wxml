@@ -1,9 +1,0 @@
-<!--pages/input/input.wxml-->
-<input value="hahaha"></input>
-
-<!-- type：决定键盘类型（文本/数字/身份证等键盘模式） -->
-<input type="number"></input>
-
-<!-- password:暗文输入 -->
-<!-- placeholder：占位文字 -->
-<input placeholder="站位文字"></input>

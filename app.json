@@ -1,20 +1,8 @@
 {
-  "pages": [
-    "pages/canvas/canvas",
-    "pages/map/map",
-    "pages/camera/camera",
-    "pages/camera/photo",
-    "pages/home/home",
-    "pages/index/index",
-    "pages/scroll/scroll",
-    "pages/text/news",
-    "pages/input/input",
-    "pages/view/view",
-    "pages/button/button",
-    "pages/text/text"
+  "pages": [    
+    "pages/index/index"
   ],
   "usingComponents": {
-    "my-cpn": "/components/my-cpn/my-cpn"
   },
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -23,23 +11,6 @@
     "backgroundColor": "#cccccc",
     "enablePullDownRefresh": false,
     "backgroundTextStyle": "dark"
-  },
-  "tabBar": {
-    "selectedColor": "#ff5777",
-    "list": [
-      {
-        "pagePath": "pages/home/home",
-        "text": "home",
-        "iconPath": "assets/tabbar/home.png",
-        "selectedIconPath": "assets/tabbar/home_active.png"
-      },
-      {
-        "pagePath": "pages/button/button",
-        "text": "button",
-        "iconPath": "assets/tabbar/profile.png",
-        "selectedIconPath": "assets/tabbar/profile_active.png"
-      }
-    ]
   },
   "debug": false,
   "sitemapLocation": "sitemap.json"
