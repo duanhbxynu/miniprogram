@@ -1,19 +1,24 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/canvas/canvas",
+    "pages/map/map",
+    "pages/camera/camera",
+    "pages/camera/photo",
     "pages/home/home",
+    "pages/index/index",
     "pages/scroll/scroll",
+    "pages/text/news",
     "pages/input/input",
     "pages/view/view",
     "pages/button/button",
     "pages/text/text"
   ],
-  "usingComponents":{
-    "my-cpn":"/components/my-cpn/my-cpn"
+  "usingComponents": {
+    "my-cpn": "/components/my-cpn/my-cpn"
   },
   "window": {
-    "navigationBarBackgroundColor": "#000000",
-    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
     "navigationBarTitleText": "小程序",
     "backgroundColor": "#cccccc",
     "enablePullDownRefresh": false,
@@ -36,5 +41,6 @@
       }
     ]
   },
+  "debug": false,
   "sitemapLocation": "sitemap.json"
 }

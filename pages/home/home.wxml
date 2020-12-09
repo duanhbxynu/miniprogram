@@ -14,9 +14,9 @@
 <button size="mini" bindtap="handleBtnClick">+</button>
 <button size="mini" bindtap="handleSubtraction">-</button>
 
-<view wx:for="{{list}}" wx:for-index="key">{{key}}</view>
-<view wx:for="{{list}}" wx:for-index="key">{{item}}</view>
-<view wx:for="{{list}}" wx:for-index="key">{{key}}:{{item}}</view>
+<view wx:for="{{list}}" wx:key="key" wx:for-index="key">{{key}}</view>
+<view wx:for="{{list}}" wx:key="key" wx:for-index="key">{{item}}</view>
+<view wx:for="{{list}}" wx:key="key" wx:for-index="key">{{key}}:{{item}}</view>
 
 <!-- 导入公共的footer -->
 <include src="/wxml/footer.wxml"/>

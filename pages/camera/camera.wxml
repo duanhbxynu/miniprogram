@@ -1,0 +1,8 @@
+
+<camera class="cameraCls" device-position="front" flash="off">
+  <cover-view class="main-tiips">photo</cover-view>
+  <cover-image class="cover-img" bindtap="photograph" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1606826520811&di=cc5e51667eb05a697e5f044fef209c06&imgtype=0&src=http%3A%2F%2Fa4.att.hudong.com%2F27%2F67%2F01300000921826141299672233506.jpg"></cover-image>
+</camera>
+<view>
+<image class="img" src="{{photo}}"></image>
+</view>

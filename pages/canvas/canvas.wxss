@@ -1,0 +1,6 @@
+/* pages/canvas.wxss */
+.canvas-cls {
+  width: 600rpx;
+  height: 600rpx;
+  background-color: lightblue;
+}
