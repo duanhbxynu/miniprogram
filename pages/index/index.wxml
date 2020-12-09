@@ -1,4 +1,4 @@
-<!--pages/index/index.wxml-->
+<!-- pages/index/index.wxml -->
 <text class="title">Hello world</text>
 <button size="mini">按钮</button>
 <!-- 1.自定义组件的基本使用 -->
