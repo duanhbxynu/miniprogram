@@ -1,9 +1,9 @@
 {
-  "pages": [    
-    "pages/index/index"
+  "pages": [
+    "pages/index/index",
+    "pages/test/test"
   ],
-  "usingComponents": {
-  },
+  "usingComponents": {},
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",
